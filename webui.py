@@ -77,8 +77,13 @@ def webui():
                 auto_launch_browser = not any([cmd_opts.listen, cmd_opts.share, cmd_opts.ngrok, cmd_opts.server_name])
 
         app, local_url, share_url = shared.demo.launch(
+<<<<<<< Updated upstream
             share=cmd_opts.share,
             server_name=initialize_util.gradio_server_name(),
+=======
+            share=True,
+            server_name=server_name,
+>>>>>>> Stashed changes
             server_port=cmd_opts.port,
             ssl_keyfile=cmd_opts.tls_keyfile,
             ssl_certfile=cmd_opts.tls_certfile,
